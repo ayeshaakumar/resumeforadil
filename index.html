@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
@@ -10,12 +9,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <style>
-  @media only screen and (min-width: 768px){
-    .navbar-brand{
-      display:none;
-    }
-
-  }
+ 
+  
   h2,h1{
   color:#0099cc;
   }
@@ -28,25 +23,40 @@
  p,li{
  font-family:'Comfortaa';
  }
- 
+ @media only screen and (max-width: 768px)
+ {
+ #sidebar{
+ width:100%;
+ }
+ }
+  @media only screen and (min-width: 768px){
+    .navbar-brand{
+      display:none;
+      }
+      #sidebar{
+ width:22%;
+ }
+    }
   </style>
 </head>
 <body>
 <div class="container-fluid">
 <div class="row">
 <div class="col-md-3 border bg-dark " >
-<div >
-<nav class="navbar navbar-expand-md navbar-dark text-center px-0 border" >
+<div id="sidebar" style="position:fixed;" >
+<img src="adil resume pic.jpg" alt="John Doe" class=" mx-auto mt-3 rounded-circle" style="width:50%;display:block">
+    
+<nav class="navbar  navbar-expand-md navbar-dark bg-dark text-center" >
   <a class="navbar-brand" href="#">ADIL KUMAR</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse text-center border" id="collapsibleNavbar">
-    <ul class="" style="list-style-type:none">
-      <li class="nav-item">
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-center px-0 mx-auto" style="list-style-type:none">
+      <li class="nav-item mx-auto">
         <a class="nav-link " href="#about">ABOUT</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item mx-auto">
         <a class="nav-link" href="#experience">EXPERIENCE</a>
       </li>
       <li class="nav-item">
@@ -62,7 +72,7 @@
   </div>  
 </nav></div>
 </div>
-<div class="col-md-9 pl-5">
+<div class="col-md-9 pl-5" style="margin-top:50px;z-index:-1">
 <div id="about" class="border-bottom">
 <h1 class="text-muted" style="font-size:75px">ADIL KUMAR</h1>
 <p>I am an experienced Analytics consultant, who has helped several Fortune 500 companies solve business problems using analytics solutions.</p>
@@ -196,5 +206,4 @@ Reduced KPI report creation time by 84% through automation of brand performance 
 
 </body>
 </html>
-
 
