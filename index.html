@@ -25,13 +25,19 @@
  }
  @media only screen and (max-width: 768px)
  {
- #sidebar{
- width:100%;
+   #pic{
+      display:none;
+      }
+   #sidebar{
+ 	 width:100%;
  }
  }
   @media only screen and (min-width: 768px){
     .navbar-brand{
       display:none;
+      }
+      #pic{
+      display:block;
       }
       #sidebar{
  width:22%;
@@ -43,10 +49,11 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-md-3 border bg-dark " >
-<div id="sidebar" style="position:fixed;" >
-<img src="adil resume pic.jpg" alt="adil kumar pic" class=" mx-auto mt-3 rounded-circle" style="width:50%;display:block">
+
+<div id="sidebar" style="position:fixed;">
+<img id="pic" src="adil resume pic.jpg" alt="adil kumar pic" class=" mx-auto mt-3 rounded-circle" style="width:50%;">
     
-<nav class="navbar  navbar-expand-md navbar-dark bg-dark text-center" >
+<nav class="navbar  navbar-expand-md navbar-dark bg-dark text-center mt-5" >
   <a class="navbar-brand" href="#">ADIL KUMAR</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -73,6 +80,7 @@
 </nav></div>
 </div>
 <div class="col-md-9 pl-5" style="margin-top:50px;z-index:-1">
+
 <div id="about" class="border-bottom">
 <h1 class="text-muted" style="font-size:75px">ADIL KUMAR</h1>
 <p>I am an experienced Analytics consultant, who has helped several Fortune 500 companies solve business problems using analytics solutions.</p>
@@ -198,7 +206,8 @@ Reduced KPI report creation time by 84% through automation of brand performance 
 <img  style="height:40px;width:40px" class="m-3" src="https://img.icons8.com/metro/52/000000/sql.png">
 </div>
 <div id="contact">
-<h1>CONTACT ME<h1>
+<h1>CONTACT ME</h1>
+<div id="wufoo-z1li0tya157xd41"> Fill out my <a href="https://ayeshaakumar.wufoo.com/forms/z1li0tya157xd41">online form</a>. </div> <script type="text/javascript"> var z1li0tya157xd41; (function(d, t) { var s = d.createElement(t), options = { 'userName':'ayeshaakumar', 'formHash':'z1li0tya157xd41', 'autoResize':true, 'height':'440', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z1li0tya157xd41 = new WufooForm(); z1li0tya157xd41.initialize(options); z1li0tya157xd41.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
 </div>
 </div>
 </div>
